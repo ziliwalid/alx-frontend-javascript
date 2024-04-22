@@ -1,16 +1,16 @@
-export function taskFirst() {
-  const task = 'I prefer using constants whenever possible.';
-  return task;
+export function getTaskDescription() {
+  const taskDescription = 'I prefer using constants whenever possible.';
+  return taskDescription;
 }
 
-export function getLast() {
-  return 'However, sometimes using let is sinequanon.';
+export function getFallbackMessage() {
+  return 'However, sometimes using let is necessary.';
 }
 
-export function taskNext() {
-  let combination = 'For instance, when ';
-  combination += 'the value of a variable needs to be updated.';
-  combination += ' ' + getFallbackMessage();
+export function getTaskSummary() {
+  let taskSummary = 'For instance, when ';
+  taskSummary += 'the value of a variable needs to be updated.';
+  taskSummary += ' ' + getFallbackMessage();
 
-  return combination;
+  return taskSummary;
 }
